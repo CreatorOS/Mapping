@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "defaultFile": "contracts/Mapping.sol",
+  "environment": "solidity",
+  "setupCommands": ["npm i", "npx hardhat compile"],
+  "compileCommand": "npx hardhat compile",
+  "tests": [
+    { "itShould": "Compile", "command": "sh learn_tests/22.sh" },
+    { "itShould": "Call get mapping", "command": "sh learn_tests/23.sh" },
+    { "itShould": "Call set mapping", "command": "sh learn_tests/24.sh" },
+    { "itShould": "Call remove mapping", "command": "sh learn_tests/25.sh" }
+  ],
+  "learnerAccessibleFileList": ["contracts/*"]
+}
