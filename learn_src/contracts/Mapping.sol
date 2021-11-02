@@ -8,16 +8,22 @@ contract Mapping {
     function get(address _addr) public view returns (uint) {
         // Mapping always returns a value.
         // If the value was never set, it will return the default value.
-        return myMap[_addr];
+
+        // write logic to return the value of the mapping for the given address
+        
     }
 
     function set(address _addr, uint _i) public {
         // Update the value at this address
-        myMap[_addr] = _i;
+
+        // write logic to set the value of the mapping for the given address to the given value
+        
     }
 
     function remove(address _addr) public {
         // Reset the value to the default value.
-        delete myMap[_addr];
+
+        // write logic to remove the value of the mapping for the given address
+        
     }
 }
