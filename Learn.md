@@ -28,7 +28,7 @@ Let's write a function that returns the value of a mapping given a key.
 
 - If the value was never set, it will return the default value.
 
-Hit `Run` to see the result. It should be `0` which is the default value of a mapping.
+First, go ahead and call `get`. It should be `0` which is the default value of a mapping.
 
 ## Setting Mapping Values
 
@@ -40,7 +40,7 @@ Let's write a function that sets the value of myMap mapping given an address as 
     }
 ```
 
-Hit `Run` to see the result. Check the output of the test 3 and you should see the mapping value changed to `3`.
+Call `set` with some address and `uint _i = 1`. Call `get` with the same `_addr`, you should see the mapping value changed to `1`.
 
 ## Removing Mapping Values
 
@@ -54,4 +54,4 @@ Let's write a function that remove the value of myMap mapping given an address a
     }
 ```
 
-Hit `Run` to see the result. Check the output of the test 4 and you should see the mapping value changed to `0` after call to `remove(addr)`.
+Call `remove` then `get`. Check the output, you should see the mapping value changed to `0` after call to `remove(addr)`.
